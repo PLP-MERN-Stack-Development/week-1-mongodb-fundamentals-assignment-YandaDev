@@ -17,7 +17,7 @@ db.books.deleteOne({title:"Brave New World"})
 
 // --- Task 3: Advanced Queries ---
 // Find books that are both in stock and published after 2010
-db.books.find({in_stock:true},{published_year:{$gt:2010}})
+db.books.find({in_stock:true , published_year:{$gt:2010}})
 
 // Use projection to return only the title, author, and price fields
 db.books.find({},{title:true, author:true, price:true, _id:false})
